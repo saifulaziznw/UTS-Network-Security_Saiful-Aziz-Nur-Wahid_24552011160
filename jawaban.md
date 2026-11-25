@@ -172,7 +172,7 @@ ARP bersifat *stateless* dan tanpa autentikasi — perangkat dapat menerima ARP 
 
 ## Tugas 4 (Pertemuan 4): Analisis Handshake WPA2
 
-**Catatan penting:** File `handshake-k7.cap` yang disediakan penguji ternyata **rusak/tidak valid**. Dikonfirmasi oleh `aircrack-ng` (*"This file is not a regular 802.11 (wireless) capture", 0 packets dibaca*) dan oleh Wireshark yang gagal membukanya. Analisis byte-level menunjukkan file berisi header pcap yang sah (link-type Ethernet) diikuti data biner acak, bukan frame 802.11/EAPOL asli — ditemukan pada seluruh file `handshake-k*.cap` di paket soal (bukan hanya milik Kasus 7). Setelah dikonfirmasi ke dosen pengampu, digunakan capture pengganti yang valid (`wpa.cap` dari repositori resmi aircrack-ng) untuk mendemonstrasikan proses analisis, sementara wordlist tetap menggunakan `wordlist-k7.txt` sesuai kasus yang ditugaskan.
+**Catatan penting:** File `handshake-k7.cap` yang disediakan penguji ternyata **rusak/tidak valid**. Dikonfirmasi oleh `aircrack-ng` (*"This file is not a regular 802.11 (wireless) capture", 0 packets dibaca*) dan oleh Wireshark yang gagal membukanya. Analisis byte-level menunjukkan file berisi header pcap yang sah (link-type Ethernet) diikuti data biner acak, bukan frame 802.11/EAPOL asli — ditemukan pada seluruh file `handshake-k*.cap` di paket soal (bukan hanya milik Kasus 7). Oleh karena itu, digunakan capture pengganti yang valid (`wpa.cap` dari repositori resmi aircrack-ng) untuk mendemonstrasikan proses analisis, sementara wordlist tetap menggunakan `wordlist-k7.txt` sesuai kasus yang ditugaskan.
 
 **Command:**
 ```bash
